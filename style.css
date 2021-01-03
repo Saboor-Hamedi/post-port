@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+   *, *::after,*::after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --bgheader: #2A3035;
+        --bgback: #1D2129;
+    }
+    html ,body{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: var(--bgback);
+     
+    }
+    img{
+        width: 100%;
+    }
+    .logo img
+    {
+        width: 80px;
+     
+        padding: 10px 5px;
+        transition: .5s;
+        cursor: pointer;
+    }
+    .logo:hover img{
+        transform: rotate(180deg);
+        border-radius: 50%;
+    }
+   
+    .nav-bar{
+        position: fixed;
+        width: 100%;
+        background-color: var(--bgheader);
+        display: flex;
+        z-index: 999;
+
+    }
+   
+    .nav-bar div:nth-child(3){
+        margin-left: auto;
+    }
+    .dot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 5px;
+        
+    }
+    .dot i{
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+   
+    header ul{
+        display: flex;
+        list-style-type: none;
+        padding: 18px;
+
+    }
+    header li{
+        padding: 10px 15px;
+    }
+    header a{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    header a:hover {
+    color: rgba(145, 139, 139, 0.61);
+   }
+    .sectionA{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .animation{
+        text-align: center;
+       
+    }
+    .animation h1{
+        color: white;
+    }
+    .banner{
+        margin-bottom: 4em;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-header
+    {  
+        font-size: 40px;
+        color: rgba(145, 139, 139, 0.61);
+    }
+    /* section B */
+    .sectionB{
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bgback);
+ 
+    }
+  
+  /* cards */
+  .rows{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 10px;
+      background-image: linear-gradient(#353730, #21272F);
+      border-radius: 5px;
+  }
+  .columns{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+    border-radius: 5px;
+
+  }
+  .card-wrapper{
+      background-color: #191C23;
+      border-radius: 5px;
+
+  }
+  .image-wrapper img{
+      width: 100%;
+      height: 200px;
+      border-radius: 5px;
+      transform-origin: 50% 50%;
+      transition: transform 1s, filter .5s ease-out;
+      cursor: pointer;
+  }
+
+.image-wrapper{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image-wrapper:hover img{
+    transform: scale(3);
+}
+.text-wrapper{
+    text-align: center;
+}
+.text-wrapper h1{
+    padding: 10px;
+    
+}
+.text-wrapper p{
+    line-height:1.5;
+}
+
+.text-wrapper h1, p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media(max-width:900px){
+    .sectionA{
+        height: 500px;
+    }
+    .banner{
+        padding: 10px;
+          transform: translateY(5rem);
+    }
+
+      header{
+          position: absolute;
+          top:79px;
+          background-color: var(--bgheader);
+          width: 100%;
+          z-index: 999;
+          display:none;
+        }
+        header ul{
+            flex-direction: column;
+            align-items: center;
+            
+
+        }
+        header li{
+            width: 100%;
+            text-align: center;
+            margin: 0;
+        
+        }
+        .dot i{
+           display: block;
+        }
+        .rows{
+            width: 90%;
+        }
+        .columns{
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+        }
+    
+  }
+  @media(max-width:700px){
+      .banner{
+         width: 100%;
+          text-align: center;
+      }
+      .banner-header{
+          font-size: 30px;
+      }
+      .animation{
+        width: 100%;
+        text-align: center;
+    }
+  }
+  @media(max-width: 500px){
+    .sectionA{
+        height: 300px;
+       
+    }
+    .banner{
+
+          transform: translateY(2rem);
+    }
+  }
+   

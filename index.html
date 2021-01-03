@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 JavaScript</title>
+
+    <script src="typewrite.js"></script>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        
+       <div class="logo"><img src="logo.png" alt=""></div>
+     
+       <header id="header">
+           <ul>
+               <li><a href="#sectionA">Banner</a></li>
+               <li><a href="#sectionB">Tutorials</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Contacts</a></li>
+            </ul>
+        </header>
+        <div class="dot"><i class="bx bx-dots-horizontal-rounded" id="display-nav" onclick="Myfunction();"></i></div>
+    </nav>
+        <section class="sectionA" id="sectionA">
+            <div class="banner">
+                <h1 class="banner-header">Developed by <strong>Saboor</strong>
+            </h1>
+            <div class="animation">
+                <h1 id="write"></h1>
+            </div>
+        </div>
+        </section>
+        <section class="sectionB" id="sectionB">
+                <div class="rows">
+                    <div class="columns">
+                        <!-- 1 -->
+                        <div class="card-wrapper">
+                        <div class="image-wrapper">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <div class="text-wrapper">
+                            <h1>Ttitle</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, inventore?</p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="image-wrapper">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <div class="text-wrapper">
+                            <h1>Ttitle</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, inventore?</p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="image-wrapper">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <div class="text-wrapper">
+                            <h1>Ttitle</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, inventore?</p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="image-wrapper">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <div class="text-wrapper">
+                            <h1>Ttitle</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, inventore?</p>
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
+        </section>
+    <!-- <button id="color">Change color</button> -->
+
+    <script>
+  new TypeIt("#write", {
+  strings: "This is my string!",
+  speed: 100,
+  breakLines: false,
+  loop: true
+}).go()
+       
+//   nav bar
+
+   </script>
+
+<script src="scroll.js"></script>
+<script src="index.js"></script>
+
+
+</body>
+
+</html>
