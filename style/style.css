@@ -171,7 +171,11 @@
         padding: 10px;
           transform: translateY(5rem);
     }
+.logo:hover img{
+    transform: rotate(0deg);
+    border-radius: 0%;
 
+}
       header{
           position: absolute;
           top:79px;
