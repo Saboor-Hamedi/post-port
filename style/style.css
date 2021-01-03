@@ -222,10 +222,10 @@
           grid-template-columns: repeat(1, 1fr);
       }
       .rows{
-        width: 100%;
+          width: 100%;
       }
     .sectionA{
-        height: 6000px;
+        height: 600px;
     }
     .banner{
           transform: translateY(2rem);
