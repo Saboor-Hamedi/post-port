@@ -225,10 +225,10 @@
           width: 100%;
       }
     .sectionA{
-        height: 600px;
+        height: 500px;
     }
     .banner{
-          transform: translateY(2rem);
+          transform: translateY(3rem);
     }
   }
    
