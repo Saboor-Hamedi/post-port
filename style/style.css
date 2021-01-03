@@ -230,5 +230,8 @@
     .banner{
           transform: translateY(4rem);
     }
+    .logo{
+        margin-left: 10px;
+    }
   }
    
