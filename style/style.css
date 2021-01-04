@@ -193,9 +193,9 @@
           background-color: var(--bgheader);
           width: 100%;
           z-index: 999;
-          border-top: 1px solid red;
-        /* border-image-slice: 1;
-        border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
+          border-top: 1px solid ;
+        border-image-slice: 1;
+         border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
           display:none;
 
         }
