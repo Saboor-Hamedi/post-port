@@ -318,7 +318,7 @@
      .dot {
          margin-right: 10px;
     }
-    .social-icons{
-      margin-left: 5px;
+    .facebook, .youtube , .instagram, .email{
+        margin-left: 5px;
     }
 }
