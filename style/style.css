@@ -116,7 +116,7 @@
      background-image: linear-gradient(#353730, #21272F);
      border-top: 1px solid #d53a9d;
      border-image-slice: 1;
-     border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
+     border-image-source: linear-gradient(top#743ad5, #d53a9d);
 }
  .columns {
      display: grid;
