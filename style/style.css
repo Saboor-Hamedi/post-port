@@ -70,18 +70,32 @@
      padding: 5px;
      transition: 0.5s;
 }
+
  header li {
      padding: 10px 15px;
 }
+header li:nth-child(1){
+    border-bottom: 1px solid yellow;
+}
+header li:nth-child(2){
+    border-bottom: 1px solid green;
+}
+header li:nth-child(3){
+    border-bottom: 1px solid cyan;
+}
+header li:nth-child(4){
+    border-bottom: 1px solid red;
+}
+
  header a {
      color: white;
      font-size: 20px;
      text-decoration: none;
      transition: 0.5s;
 }
+
  header a:hover {
      color: rgba(145, 139, 139, 0.61);
-     
 }
 /* search input */
 .search-nav{
@@ -256,6 +270,8 @@
          width: 100%;
          text-align: center;
          margin: 0;
+         border:none !important;
+
     }
      .dot {
          display: block;
