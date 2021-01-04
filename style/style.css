@@ -21,14 +21,16 @@
     }
     .logo img
     {
-        width: 80px;
-     
-        padding: 10px 5px;
+        width: 50px;
+        height: 50px;
+        padding:  5px;
         transition: .5s;
+        border-radius: 50px;
         cursor: pointer;
+        overflow: hidden;
     }
     .logo:hover img{
-        transform: rotate(180deg);
+        transform: rotate(380deg);
         border-radius: 50%;
     }
    
@@ -37,32 +39,39 @@
         width: 100%;
         background-color: var(--bgheader);
         display: flex;
+        height: 50px;
         z-index: 999;
-
     }
    
     .nav-bar div:nth-child(3){
         margin-left: auto;
     }
     .dot{
+        position: relative;
+        right: 10px;
+        top: 8px;
+        width: 35px;
+        height: 35px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px 5px;
-        
+        border: double 1px transparent;
+        border-radius: 50%;
+        background-image: linear-gradient(#2A3035, #2A3035), radial-gradient(circle at top left, #743ad5,#d53a9d);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        display: none;
     }
     .dot i{
         font-size: 20px;
         color: white;
         cursor: pointer;
-        display: none;
     }
    
     header ul{
         display: flex;
         list-style-type: none;
-        padding: 18px;
-
+        padding: 5px;
     }
     header li{
         padding: 10px 15px;
@@ -116,6 +125,9 @@
       padding: 10px;
       background-image: linear-gradient(#353730, #21272F);
       border-radius: 5px;
+      border-top: 2px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
   }
   .columns{
     display:grid;
@@ -169,24 +181,25 @@
         padding: 10px;
           transform: translateY(5rem);
     }
-.logo:hover img{
-    transform: rotate(0deg);
-    border-radius: 0%;
-
-}
+    .logo:hover img{
+        transform: rotate(0deg);
+        border-radius: 0%;
+    }
       header{
           position: absolute;
-          top:79px;
+          top:50px;
           background-color: var(--bgheader);
           width: 100%;
           z-index: 999;
+          border-top: 2px solid;
+          border-image-slice: 1;
+          border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
           display:none;
+
         }
         header ul{
             flex-direction: column;
             align-items: center;
-            
-
         }
         header li{
             width: 100%;
