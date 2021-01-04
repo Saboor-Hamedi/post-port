@@ -1,9 +1,11 @@
-function Myfunction(){
-    let header = document.querySelector('#header');
-    if(header.style.display === 'block'){
-        header.style.display= 'none';
-    }else{
-        header.style.display = 'block';
+function Myfunction() {
+  
+  let header = document.querySelector('#header');
+  if(header.style.display === 'block'){
+    header.style.display= 'none';
+  }else{    
+      header.style.display = 'block';
+   
     }
 }
 
@@ -18,10 +20,9 @@ $(document).ready(function(){
       if (this.hash !== "") {
         // Prevent default anchor click behavior
         event.preventDefault();
-  
+
         // Store hash
         var hash = this.hash;
-  
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
@@ -33,4 +34,5 @@ $(document).ready(function(){
         });
       } // End if
     });
-  });
+});
+  // end
