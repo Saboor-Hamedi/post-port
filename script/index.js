@@ -27,6 +27,10 @@ let email = document.querySelector('.email');
 email.addEventListener('click', function () {
   window.open('https://gmail.com/', '__blank');
 });
+let twitter = document.querySelector('#open-twitter');
+twitter.addEventListener('click', function () {
+  window.open('https://twitter.com/Arsallan_', '__blank');
+});
 // skill progress bar
 window.addEventListener('load', () => {
   let progressBar = document.querySelectorAll('.progress-bar');
