@@ -116,6 +116,23 @@ color: white;
 .search-nav input:focus{
 outline: none;
 }
+/* twitter */
+.twitter{
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    padding: 1px;
+    border-radius: 5px;
+}
+.twitter i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.twitter:hover i{
+    color: #1C9CEA;
+}
 .sectionA {
     width: 100%;
     height: 100vh;
@@ -295,7 +312,9 @@ transform: rotate(380deg);
         padding: 20px;
         height: auto;
     }
-  
+  .twitter{
+      display: none;
+  }
     .banner {
         padding: 10px;
         transform: translateY(5rem);

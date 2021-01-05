@@ -9,6 +9,24 @@ function Myfunction() {
     }
 }
 
+
+// opne facebook
+let facebook = document.querySelector('.facebook');
+facebook.addEventListener('click', function () {
+  window.open('https://web.facebook.com/saboor.hamedi.7/', '__blank');
+});
+let instagram = document.querySelector('.instagram');
+instagram.addEventListener('click', function () {
+  window.open('https://www.instagram.com/hamedisaboor/', '__blank');
+});
+let youtube = document.querySelector('.youtube');
+youtube.addEventListener('click', function () {
+  window.open('https://www.youtube.com/channel/UCZMq7nZ_PH1aWwfenMnDSqQ', '__blank');
+});
+let email = document.querySelector('.email');
+email.addEventListener('click', function () {
+  window.open('https://gmail.com/', '__blank');
+});
 // skill progress bar
 window.addEventListener('load', () => {
   let progressBar = document.querySelectorAll('.progress-bar');
