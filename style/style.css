@@ -248,6 +248,7 @@ transform: rotate(380deg);
 /* progress bar */
 .sectionC{
     padding: 10px;
+    height: auto;
 }
 .progress-wrapper
 {
@@ -256,6 +257,7 @@ transform: rotate(380deg);
 }
 .progress{
     width: 100%;
+    border-radius: 10px;
 }
 .progress-bar
 {
@@ -341,6 +343,14 @@ transform: rotate(380deg);
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
 }
+.progress{
+    width: 90%;
+    margin-left: 10px;
+}
+.progress-wrapper span{
+    margin-left: 10px;
+}
+
 }
 @media(max-width:700px) {
     .banner {
