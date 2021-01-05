@@ -189,6 +189,7 @@ transform: rotate(380deg);
 /* section B */
 .sectionB {
     width: 100%;
+    height: 100vh;
     padding: 100px;
     background-color: var(--bgback);
 
@@ -252,7 +253,7 @@ transform: rotate(380deg);
     margin: 0 auto;
     padding: 20px;
 }
-.first-progress, .second-progress, .third-progress{
+.first-progress, .second-progress, .third-progress, .fourth-progress{
     position: relative;
     background-color: yellow;
     padding: 10px;
@@ -279,6 +280,7 @@ transform: rotate(380deg);
     width: 80%;
     height: 5px;
     border-radius: 5px;
+    transition: 1s;
 }
 .second-progress .main-percentage{
     background-color: #d53a9d;
@@ -292,12 +294,24 @@ transform: rotate(380deg);
     height: 5px;
     border-radius: 5px;
 }
+.fourth-progress .main-percentage{
+    background-color: #d53a9d;
+    width: 65%;
+    height: 5px;
+    border-radius: 5px;
+}
 @media(max-width:900px) {
     .sectionA {
-        height: 500px;
+        padding: 20px;
+        height: auto;
     }
     .sectionB{
         padding: 20px;
+        height: auto;
+    }
+    .sectionC{
+        padding: 20px;
+        height: auto;
     }
   
     .banner {
