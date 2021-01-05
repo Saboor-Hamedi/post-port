@@ -245,17 +245,19 @@ transform: rotate(380deg);
 
 /* progress bar */
 .sectionC{
-    background-color: red;
+    width: 100%;
     height: 100vh;
 }
 .progress-wrapper{
-    max-width: 1000px;
+    width: 1000px;
     margin: 0 auto;
     padding: 20px;
+    border-top: 1px solid #d53a9d;
 }
 .first-progress, .second-progress, .third-progress, .fourth-progress{
+    max-width: 1000px;
+    margin: 0 auto;
     position: relative;
-    background-color: yellow;
     padding: 10px;
 }
 
@@ -263,17 +265,20 @@ transform: rotate(380deg);
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+
 }
 .progress-name {
     position: absolute;
     top: 10px;
     font-weight: bold;
+    color: white;
 }
 .progress-percentage{
     position: absolute;
     right: 20px;
     bottom: 10px;
     font-weight: bold;
+    color: white;
 }
 .main-percentage{
     background-color: #d53a9d;
@@ -382,7 +387,7 @@ transform: rotate(380deg);
     .columns {
         grid-template-columns: repeat(1, 1fr);
     
-}
+    }
     .rows {
         width: 100%;
 }
@@ -400,5 +405,19 @@ transform: rotate(380deg);
 }
     .facebook, .youtube , .instagram, .email{
         margin-left: 5px;
+    }
+    
+    .sectionC{
+        padding: 0;
+    }
+   .progress-wrapper{
+       padding: 0;
+       margin-top: 10px;
+      
+       width: 100%;
+    }
+    .first-progress, .second-progress, .third-progress, .fourth-progress{
+        
+        width: 100%;
     }
 }
