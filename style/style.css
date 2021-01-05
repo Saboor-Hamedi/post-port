@@ -287,7 +287,8 @@ transform: rotate(380deg);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d53a9d;
+    /* background-color: #d53a9d; */
+    background-image:  linear-gradient(to right , #743ad5, #d53a9d);
     border-radius: 10px;
     transition:  all 1.5s;
     margin-top: 10px;
