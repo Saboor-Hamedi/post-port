@@ -255,13 +255,16 @@ transform: rotate(380deg);
     max-width: 1000px;
     margin: 0 auto;
 }
+.progress-wrapper span{
+    color: white;
+}
 .progress{
     width: 100%;
     border-radius: 10px;
 }
 .progress-bar
 {
-    height: 10px;
+    height: 13px;
     width: 0%;
     position: relative;
     display: flex;
@@ -272,7 +275,6 @@ transform: rotate(380deg);
     transition:  all 1.5s;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 .progress-bar span{
     font-size: 10px;
@@ -280,8 +282,6 @@ transform: rotate(380deg);
     position: absolute;
     right: 0%;
 }
-
-
 @media(max-width:900px) {
     .sectionA {
         padding: 20px;
@@ -335,7 +335,6 @@ transform: rotate(380deg);
         margin-bottom: 10px;
     }
     .rows {
-        width: 90%;
         border-top: 1px solid #d53a9d;
         height: auto;
     }
@@ -353,6 +352,9 @@ transform: rotate(380deg);
 
 }
 @media(max-width:700px) {
+    .sectionB{
+        padding: 0px;
+    }
     .banner {
         width: 100%;
         text-align: center;
@@ -371,7 +373,7 @@ transform: rotate(380deg);
 @media(max-width: 500px) {
     .columns {
         grid-template-columns: repeat(1, 1fr);
-    
+
     }
     .rows {
         width: 100%;
