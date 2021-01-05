@@ -9,7 +9,20 @@ function Myfunction() {
     }
 }
 
-
+// skill progress bar
+window.addEventListener('load', () => {
+  let progressBar = document.querySelectorAll('.progress-bar');
+  let values = [
+    '80%',
+    '75%',
+    '70%',
+    '65%',
+    '80%'
+  ];
+  progressBar.forEach((progress, index) => {
+    progress.style.width = values[index];
+  });
+});
 
 // SCROLL
 $(document).ready(function(){
